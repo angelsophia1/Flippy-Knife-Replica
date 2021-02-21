@@ -163,7 +163,7 @@ MonoBehaviour:
   force: 3.5
   torque: 20
   restartButton: {fileID: 1434830631}
-  flipCountText: {fileID: 0}
+  flipCountText: {fileID: 304258615}
 --- !u!65 &67828299
 BoxCollider:
   m_ObjectHideFlags: 0
