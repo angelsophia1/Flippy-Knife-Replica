@@ -6,7 +6,7 @@ Following Brackeys Channel, I have created this project which is similar to the 
 
 I have also uploaded a WebGL Version to Itch.io.
 
-Unity Version : 2018.3.8f1
+Unity Version : 2018.4.0f1
 
 Youtube Demo Link : https://www.youtube.com/watch?v=DfrT0sWsqYQ
 

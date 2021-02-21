@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 public class Knife : MonoBehaviour {
     public Rigidbody rb;
     public float force = 5f;
     public float torque = 20f;
     public GameObject restartButton;
+    public TextMeshProUGUI flipCountText;
+    private int flipCount;
     private float timeCalcuStart;
     private Vector2 startSwipe;
     private Vector2 endSwipe;
@@ -26,6 +29,8 @@ public class Knife : MonoBehaviour {
 	}
     void Swipe()
     {
+        ++flipCount;
+        flipCountText.SetText(flipCount.ToString());
         timeCalcuStart = Time.time;
         rb.isKinematic = false;
         Vector2 swipe = endSwipe - startSwipe;
@@ -58,6 +63,8 @@ public class Knife : MonoBehaviour {
     }
     public void Restart()
     {
+        flipCount = 0;
+        flipCountText.SetText(flipCount.ToString());
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
